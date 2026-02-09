@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guardian Six Security - Veteran-Owned Security Services</title>
+  <meta name="description" content="Veteran-owned and operated security solutions, volunteer services for local events, and community education on safety and security.">
+  <link rel="stylesheet" href="styles.css"/>
+  <!-- Google Fonts (optional - remove if you prefer system fonts) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <div class="container">
+      <div class="logo">Guardian<span>Six</span> Security <span class="veteran-tag">Veteran-Owned & Operated</span></div>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Protecting Our Community with Honor</h1>
+      <p>Veteran-owned security services, volunteer support for local events, and dedicated community education on safety and security.</p>
+      <a href="#contact" class="btn">Get a Free Quote</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Security Guards</h3>
+          <p>Highly trained veterans providing protection for events, businesses, and residential areas, with a commitment to community service.</p>
+        </div>
+        <div class="service-card">
+          <h3>Surveillance Systems</h3>
+          <p>CCTV installation and monitoring to ensure 24/7 security, tailored for local businesses and community spaces.</p>
+        </div>
+        <div class="service-card">
+          <h3>Community Safety Education</h3>
+          <p>Free workshops and programs educating residents on personal safety, emergency preparedness, and security best practices.</p>
+        </div>
+        <div class="service-card">
+          <h3>Volunteer Security Programs</h3>
+          <p>Volunteer work for local events, nonprofits, and businesses, offering pro-bono or discounted services to support our community.</p>
+        </div>
+        <div class="service-card">
+          <h3>Veteran Employment & Training</h3>
+          <p>Hiring and training fellow veterans for security roles, fostering leadership and opportunity in public safety.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2>About Guardian Six Security</h2>
+      <p>We are a veteran-owned and operated security company dedicated to serving our community with integrity and expertise. Our team of experienced veterans provides top-tier security while giving back through volunteer work at local events and businesses. We emphasize community education on safety and security to empower residents and prevent threats.</p>
+      <p>Licensed • Insured • Committed to Community Service</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" placeholder="Your Name" required/>
+        <input type="email" placeholder="Your Email" required/>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <p>Phone: <a href="tel:+14404122449">(440) 412-2449</a> | Email: <a href="mailto:josh@gsixsecurity.com">josh@gsixsecurity.com</a></p>
+      <p>Mansfield, Ohio • Proudly Serving Richland County & Beyond</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Guardian Six Security. Veteran-Owned & Operated. All rights reserved.</p>
+      <p>Contact: <a href="mailto:josh@gsixsecurity.com">josh@gsixsecurity.com</a> | <a href="tel:+14404122449">(440) 412-2449</a></p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.getElementById('main-nav');
+
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+
+    // Optional: Basic form "submission" alert (replace with real backend later)
+    document.getElementById('contact-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thank you! Your message has been sent. (This is a demo – add real backend integration.)');
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
